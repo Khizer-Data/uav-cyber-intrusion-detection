@@ -1,5 +1,5 @@
 # uav-cyber-intrusion-detection
-Machine learning models for cyber-physical intrusion detection in Unmanned Aerial Vehicles (UAVs) based on the UAVs Dataset Under Normal and Cyberattacks, achieving up to 95.7% accuracy with Bagging Classifier.
+Machine learning models for cyber-physical intrusion detection in Unmanned Aerial Vehicles (UAVs) based on the UAVs Dataset Under Normal and Cyberattacks, achieving up to 96.28% accuracy with Bagging Classifier.
 
 # 🛡️ UAV Cyber-Physical Intrusion Detection System
 
@@ -33,24 +33,31 @@ It is based on the study:
 
 ---
 
+Here's your updated **README section** with the latest evaluation metrics for each machine learning model:
+
+---
+
 ## 🧪 **Machine Learning Models & Results**
 
-| Model                  | Accuracy  | Precision (avg) | Recall (avg) | F1-Score (avg) |
-|------------------------|:----------:|:---------------:|:------------:|:--------------:|
-| 🔹 **Logistic Regression**   | 41.17%    | 0.37            | 0.33         | 0.29           |
-| 🌲 **Random Forest**         | 93.56%    | 0.95            | 0.95         | 0.95           |
-| ⚡ **XGBoost**               | 89.40%    | 0.92            | 0.92         | 0.92           |
-| 🐈 **CatBoost**              | 84.80%    | 0.89            | 0.88         | 0.88           |
-| 🎛 **Bagging Classifier**    | ⭐ **95.73%** | 0.97            | 0.97         | 0.97           |
+| Model                      |   Accuracy   | Precision (avg) | Recall (avg) | F1-Score (avg) |
+| -------------------------- | :----------: | :-------------: | :----------: | :------------: |
+| 🔹 **Logistic Regression** |    40.96%    |       0.43      |     0.36     |      0.36      |
+| 🌲 **Random Forest**       |    94.28%    |       0.95      |     0.95     |      0.95      |
+| ⚡ **XGBoost**              |    90.24%    |       0.92      |     0.92     |      0.92      |
+| 🐈 **CatBoost**            |    85.51%    |       0.89      |     0.88     |      0.87      |
+| 💡 **LightGBM**            |    92.48%    |       0.94      |     0.94     |      0.94      |
+| 🎛 **Bagging Classifier**  | ⭐ **96.28%** |       0.97      |     0.97     |      0.97      |
 
 ---
 
 ## 🔍 **Key Insights**
-- 🎯 **Bagging Classifier** emerged as the top performer (**95.73% accuracy**), demonstrating robustness in detecting intrusions.  
-- 🌲 **Random Forest** also performed excellently (**93.56% accuracy**), confirming tree-based models' effectiveness.  
-- ⚡ **XGBoost** showed strong performance (**89.40% accuracy**) with faster computations.  
-- 🐈 **CatBoost** had decent results (**84.80% accuracy**) but could benefit from further tuning.  
-- ⚠️ **Logistic Regression** underperformed, indicating that more complex models are needed for this dataset.
+
+* ⭐ **Bagging Classifier** remains the top performer (**96.28% accuracy**) with excellent consistency across all metrics.
+* 🌲 **Random Forest** achieved strong results (**94.28% accuracy**) and high performance in every class.
+* 💡 **LightGBM** slightly outperformed XGBoost, delivering a solid **92.48% accuracy**.
+* ⚡ **XGBoost** still showed reliable and efficient performance (**90.24% accuracy**).
+* 🐈 **CatBoost** achieved moderate performance (**85.51% accuracy**) and could benefit from additional tuning.
+* ⚠️ **Logistic Regression** performed the worst (**40.96% accuracy**), showing its limitations for complex, multi-class intrusion detection tasks.
 
 ---
 
@@ -59,21 +66,51 @@ It is based on the study:
 <details>
 <summary>🔍 Click to expand</summary>
 
-### 📈 **Logistic Regression (41.17% Accuracy)**  
-- Struggled with class imbalance and complex patterns.
+### 🔹 **Logistic Regression (40.96% Accuracy)**
 
-### 🌲 **Random Forest (93.56% Accuracy)**  
-- Achieved near-perfect classification across all classes.  
-- High precision and recall.
+* **Precision (avg):** 0.43
+* **Recall (avg):** 0.36
+* **F1-score (avg):** 0.36
+* Heavily struggled with class imbalance and complex decision boundaries.
 
-### ⚡ **XGBoost (89.40% Accuracy)**  
-- Balanced precision-recall trade-off with efficient computation.
+### 🌲 **Random Forest (94.28% Accuracy)**
 
-### 🐈 **CatBoost (84.80% Accuracy)**  
-- Performed well but less robust compared to ensemble models.
+* **Precision (avg):** 0.95
+* **Recall (avg):** 0.95
+* **F1-score (avg):** 0.95
+* Strong generalization across all classes with minimal misclassification.
 
-### 🎛 **Bagging Classifier (95.73% Accuracy)**  
-- Best overall performance with the highest accuracy and balanced class predictions.
+### ⚡ **XGBoost (90.24% Accuracy)**
+
+* **Precision (avg):** 0.92
+* **Recall (avg):** 0.92
+* **F1-score (avg):** 0.92
+* Efficient and well-balanced performance, especially effective on classes 1 and 4.
+
+### 🐈 **CatBoost (85.51% Accuracy)**
+
+* **Precision (avg):** 0.89
+* **Recall (avg):** 0.88
+* **F1-score (avg):** 0.87
+* Struggled slightly with class 2 but performed well overall.
+
+### 💡 **LightGBM (92.48% Accuracy)**
+
+* **Precision (avg):** 0.94
+* **Recall (avg):** 0.94
+* **F1-score (avg):** 0.94
+* Excellent performance and close to Random Forest with faster inference.
+
+### 🎛 **Bagging Classifier (96.28% Accuracy)**
+
+* **Precision (avg):** 0.97
+* **Recall (avg):** 0.97
+* **F1-score (avg):** 0.97
+* Outperformed all models with the most consistent and reliable predictions across classes.
+
+</details>
+
+---
 
 
 ## 💡 **Technologies Used**
