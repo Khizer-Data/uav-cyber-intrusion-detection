@@ -33,9 +33,6 @@ It is based on the study:
 
 ---
 
-Here's your updated **README section** with the latest evaluation metrics for each machine learning model:
-
----
 
 ## 🧪 **Machine Learning Models & Results**
 
